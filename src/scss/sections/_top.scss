@@ -1,0 +1,11 @@
+.top{
+    background: red;
+
+    @include media_tablet {
+        background: blue;
+    }
+
+    @include media_mobile {
+        background: green;
+    }
+}

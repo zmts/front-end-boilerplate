@@ -1,0 +1,46 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img{
+    vertical-align: top;
+}
+
+div, header, footer, input, button{
+    box-sizing: border-box;
+}
+
+// firefox fix 'shaking font inside button'
+input[type=button], button{
+    padding: 0;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.wrapper{
+    min-width: 300px; // and paddind + 10 + 10
+
+    margin: 0 auto;
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    @include media_desktop {
+        max-width: 1200px;
+        // background: red;
+    }
+
+    @include media_tablet {
+        // background: yellow;
+        max-width: 1024px;
+    }
+
+    @include media_mobile {
+        // background: green;
+    }
+}
