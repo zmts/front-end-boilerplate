@@ -7,9 +7,9 @@ gulp.task('make-sass', function() {
     return gulp.src('src/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(autoprefixer({
-			browsers: ['last 20 versions'],
-			cascade: false
-		}))
+            browsers: ['last 20 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('app/css'))
         .pipe(bs.reload({stream: true}))
 });

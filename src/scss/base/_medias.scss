@@ -29,3 +29,9 @@ $mobile_width: 640px;
         @content;
     }
 }
+
+@mixin media_edge {
+    @supports (-ms-accelerator:true){
+        @content;
+    }
+}
